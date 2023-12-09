@@ -1,0 +1,317 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Proxima Nova Condensed Regular';
+    src: url('fonts/ProximaNovaCond-Regular.eot');
+    src: url('fonts/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/ProximaNovaCond-Regular.woff') format('woff'),
+    url('fonts/ProximaNovaCond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+    font-family: "Proxima Nova Condensed";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: "Proxima Nova Condensed Regular";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 1250px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none; /* Убираем подчёркивание */
+    font-size: 18px;
+    color: #444444;
+}
+
+header {
+    border: #D9D9D9 1px solid;
+
+}
+
+.nav-bar__item__logo {
+    margin-left: 70px;
+    margin-right: 297px;
+}
+
+.nav-bar__item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.banner {
+    background-image: url("img/bg.png");
+    width: 1250px;
+    height: 600px;
+
+
+}
+
+.banner__text {
+    font-family: "Proxima Nova Condensed Regular";
+    font-weight: 600;
+    font-size: 56px;
+    color: #444444;
+    margin: 0;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    width: 709px;
+    gap: 60px;
+    padding-left: 70px;
+    padding-top: 139px;
+
+}
+
+.banner__button {
+    display: inline-block;
+    background-color: #B01736;
+    width: 110px;
+    height: 56px;
+    border-radius: 8px;
+    border: none;
+    padding: 18px 28px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.banner__button :hover{
+    color: #D43152;
+}*/
+
+.about {
+    background-color: #FFFFFF;
+    width: 1110px;
+    height: 352px;
+    box-shadow: 0px 0px 32px 0px #00000014;
+    padding-top: 100px;
+    padding-left: 110px;
+}
+
+.about__text {
+    font-family: "Proxima Nova Condensed Regular";
+    font-size: 32px;
+    text-align: center;
+    width: 890px;
+    height: 110px;
+    color: #444444;
+
+}
+
+.about__softline {
+    color: #B01736;
+}
+
+.numbers {
+    padding-left: 110px;
+}
+
+.numbers__top,
+.numbers__bottom {
+    display: flex;
+    gap: 185px;
+    align-content: center;
+}
+
+.numbers__bottom {
+    margin-top: 70px;
+    padding-left: 185px;
+}
+
+.numbers__title {
+    color: #A30C33;
+    font-size: 80px;
+    margin: 0;
+}
+
+.numbers__text {
+    display: inline-block;
+    color: #444444;
+    font-size: 18px;
+    width: 240px;
+}
+
+.map__nav {
+    display: flex;
+    padding-top: 33px;
+    padding-left: 70px;
+    width: 1250px;
+    height: 80px;
+    box-shadow: 0px 0px 40px 0px #0000000F;
+
+}
+
+.map__nav__burger {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.map__nav__group {
+    display: flex;
+    margin-left: 100px;
+    font-size: 18px;
+}
+
+.map__nav__region {
+    margin: 0;
+}
+
+.map__img {
+    margin-top: 100px;
+}
+
+.mission {
+    display: flex;
+    width: 1250px;
+    height: 471px;
+    padding: 139px 70px;
+    background: url("img/Left pattern.png") no-repeat left ,
+    #A30C33 url("img/Right pattern.png") no-repeat right ;
+}
+.mission__text{
+    color: #FFFFFF;
+    text-align: center;
+}
+.mission__text__title{
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+
+}
+.mission__text__subtitle{
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: inherit;
+}
+.direction__card{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,615px);
+
+}
+.direction__title{
+    color: #444444;
+    font-size: 56px;
+    text-align: center;
+}
+.direction__card__text{
+    color: #FFFFFF;
+    font-size: 24px;
+    opacity: 100%;
+
+}
+.direction__card__rectangle{
+    background-color:#2D3653;
+    opacity: 60%;
+    height: 80px;
+    margin-top: 180px;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.direction__card__cloud{
+    background: url("img/direction/cloud.png")  no-repeat ;
+    background-size: contain;
+    width: 615px;
+    height: 260px;
+}
+.direction__card__transformation{
+    background: url("img/direction/transformation.png")  no-repeat ;
+    background-size: contain;
+    width: 615px;
+    height: 260px;
+}
+.direction__card__security{
+    background: url("img/direction/security.png")  no-repeat ;
+    background-size: contain;
+    width: 615px;
+    height: 260px;
+}
+.direction__card__import{
+    background: url("img/direction/import.png")  no-repeat ;
+    background-size: contain;
+    width: 615px;
+    height: 260px;
+}
+.direction__card__support{
+    background: url("img/direction/support.png")  no-repeat ;
+    background-size: contain;
+    width: 615px;
+    height: 260px;
+}
+.direction__card__solutions{
+    background: url("img/direction/solutions.png")  no-repeat ;
+    background-size: contain;
+    width: 615px;
+    height: 260px;
+}
+.benefits_title{
+    font-size: 56px;
+    color: #444444;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.benefits__group{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.benefits__icon{
+    display: flex;
+    width: 178px;
+    height: 160px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.benefits__icon__text{
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: unset;
+
+}
+
+.benefits__motivation__title1{
+    margin-top: 100px;
+    border-top: rgba(183, 183, 183, 0.87) 1px solid;
+    padding-top: 70px;
+    font-size: 40px;
+    color: #444444;
+    text-align: center;
+}
+.benefits__motivation__title2{
+    font-size: 40px;
+    color: #B01736;
+    text-align: center;
+}
